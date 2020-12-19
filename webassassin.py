@@ -89,7 +89,7 @@ elif select == 2:
 elif select == 3:
     print (Fore.LIGHTMAGENTA_EX+"FIND WEB BY ROBOT")
     time.sleep(2)
-    print ("shad.ir")
+    print ("nemoneh = shad.ir")
     search = ['robots.txt' , 'search/' , 'admin/' , 'login/' , 'themes/' , 'user/' , 'user/logout/' , 'user/reqister/' , 'node/add/' , 'install.php' , 'user/password/' ]
     url1 = raw_input("Plase Enter The URL = ")
     for page in search:
