@@ -55,7 +55,8 @@ print (Fore.LIGHTYELLOW_EX+"1 = SPAM SMS")
 print (Fore.LIGHTBLUE_EX+"2 = SPAM LINK")
 print (Fore.LIGHTMAGENTA_EX+"3 = FIND WEB BY ROBOT")
 print (Fore.CYAN+"4 = FIND WEB HANDS YOU")
-print (Fore.LIGHTRED_EX+"5 = EXIT")
+print (Fore.LIGHTRED_EX+"5 = VIRUS VOISE NOT BAD AND EZEY")
+print (Fore.YELLOW+"6 = EXIT")
 print
 select = input("Chose a option = ")
 time.sleep(1)
@@ -89,7 +90,7 @@ elif select == 2:
 elif select == 3:
     print (Fore.LIGHTMAGENTA_EX+"FIND WEB BY ROBOT")
     time.sleep(2)
-    print ("nemoneh = shad.ir")
+    print ("shad.ir")
     search = ['robots.txt' , 'search/' , 'admin/' , 'login/' , 'themes/' , 'user/' , 'user/logout/' , 'user/reqister/' , 'node/add/' , 'install.php' , 'user/password/' ]
     url1 = raw_input("Plase Enter The URL = ")
     for page in search:
@@ -110,8 +111,20 @@ elif select == 4:
         else:
             print (Fore.RED+" [-] "+Fore.WHITE+" page NO "+url1+"/"+page )
 elif select == 5:
-    print (Fore.LIGHTBLUE_EX+"Thang" , name1)
-    sys.exit()
+    print (Fore.RED+"Hi IS ESEY VIRUS VOISE NOT BAD!")
+    time.sleep(2)
+    namevirus =raw_input("Enter The Name Virus = ")
+    voisee = raw_input("Enter The Name Voise(che asmi mikhahid begid) = ")
+    virus1 = open(namevirus+'.vbs','w')
+    virus1.write('\nstrText='+'('+'"'+voisee+'"'+')')
+    virus1.write('\nset objvoice = CreateObject("SAPI.SpVoice")')
+    virus1.write('\nObjvoice.Rate=-3')
+    virus1.write('\nObjvoice.SpeaK StrText')
+    print ("YES GRADE VIRUS")
+    print ("SEARCH WINDOW" , namevirus+".vbs")
+    virus1.close()
+elif select == 6:
+    print ("BYE" , name1)
  
 
 
